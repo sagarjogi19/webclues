@@ -92,7 +92,7 @@ $year=date('Y',strtotime($car->make_date));
                         <label for="profileImage" class="col-sm-2 control-label">Car Icon</label>
                         <div class="col-sm-8">
                             <input type="file" id="icon" name="icon" class="form-control-file" accept="image/*">
-                            <img id="iconImage" src="{{isset($car)?Storage::disk('public')->url('icons/'.$car->icon):Storage::disk('public')->url('icons/car.png')}}" style="width: 100px;height: 100px;">
+                            <img id="iconImage" src="{{isset($car)?Storage::disk('public')->url('icons/'.$car->icon):asset('vendor/assets/images/car.png')}}" style="width: 100px;height: 100px;">
                         </div>
                     </div>
 
